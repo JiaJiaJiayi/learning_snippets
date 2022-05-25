@@ -19,7 +19,7 @@ const readyCallback =  () => {
     });
   };
 conn.on('ready', readyCallback).connect({
-  host: '192.168.100.100',
+  host: '10.98.102.146',
   port: 22,
   username: 'frylock',
   privateKey: readFileSync('/path/to/my/key')
