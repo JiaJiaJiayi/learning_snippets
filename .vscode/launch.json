@@ -10,6 +10,27 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/node_modules"],
       "outFiles": ["${workspaceFolder}/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Mustache",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/mustache/index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug webpack plugin",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/node_modules/webpack-cli/dist/index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug acorn ast tree",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/ast/acorn.js"
     }
   ]
 }

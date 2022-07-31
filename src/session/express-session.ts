@@ -7,8 +7,8 @@ import { Repository, Client } from 'redis-om';
 import mustacheExpress from 'mustache-express';
 import bodyParser from 'body-parser';
 import bcrypt from 'bcrypt';
-import { userSchema, User } from './model/user';
-import { wsWrapper } from './server/websocket';
+import { userSchema, User } from '../model/user';
+import { wsWrapper } from '../server/websocket';
 
 const RedisStore = connectRedis(session);
 
